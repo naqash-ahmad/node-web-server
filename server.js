@@ -35,7 +35,10 @@ app.use((req, res, next) => {
 // });
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hello Express!<h1>');
+    res.send({
+        title: 'Home Page'
+        
+    });
 });
 app.get('/Json', (req, res) => {
     res.send({
