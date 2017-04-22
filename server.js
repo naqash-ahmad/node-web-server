@@ -35,9 +35,9 @@ app.use((req, res, next) => {
 // });
 
 app.get('/', (req, res) => {
-    res.send({
+    res.render({
         title: 'Home Page'
-        
+
     });
 });
 app.get('/Json', (req, res) => {
